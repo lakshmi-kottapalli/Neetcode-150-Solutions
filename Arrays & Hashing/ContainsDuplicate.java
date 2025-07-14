@@ -1,4 +1,5 @@
 import java.util.HashMap;
+//Add values in hashmap and check if current index’s value is seen already in hashmap
 
 class Solution {
     public boolean hasDuplicate(int[] nums) {  
