@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
-//Create a Integer Hashmap and check to see if the difference (target - nums[i[) exists in Hashmap
+//Create a Integer Hashmap and check to see if the difference (target - nums[i]) exists in Hashmap
 //First calculate difference, check if map contains, THEN put in hashmap
 //Key is value, then index because we are comparing with key and obtain/return the index 
 
