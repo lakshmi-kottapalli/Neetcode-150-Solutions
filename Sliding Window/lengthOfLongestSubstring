@@ -1,0 +1,22 @@
+//Left and right pointer
+//We check if right is already in set if it is
+//Get rid of set.charAt(left) and left++ till right isn't seen in set (we got rid of prev dupe)
+//Make sure to add s.charAt(right) after getting rid of duplicate
+//Max = math.max(max, set.size())
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+       HashSet<Character> set = new HashSet<>();
+       int left = 0;
+       int max = 0;
+       for ( int right = 0; right < s.length(); right++) {
+           while (set.contains(s.charAt(right))) {
+                set.remove(s.charAt(left));
+                left++;
+           }
+           set.add(s.charAt(right));
+           max = Math.max(set.size(), max);
+       }
+       return max;
+    }
+}
